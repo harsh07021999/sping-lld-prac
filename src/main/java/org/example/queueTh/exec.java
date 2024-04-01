@@ -16,7 +16,7 @@ public class exec {
 
     public void test(){
         Request r = new Request();
-        CharacterService characterService = characterFactory.createCharacter(CharEnum.Archer);
+        CharacterService characterService = characterFactory.createCharacter(CharEnum.HUMAN);
         Human human = (Human) characterService.createCharacter(r);
     }
 }
