@@ -14,7 +14,7 @@ public class FactionFactory {
         this.factionStrategiesList = factionStrategies;
     }
 
-    FactionStrategies getFactionStrategy(FactionEnum factionEnum){
+    public FactionStrategies getFactionStrategy(FactionEnum factionEnum){
         return this.factionStrategiesList.stream()
                 .filter( factionStrategies -> factionStrategies.getFaction().equals(factionEnum))
                 .findFirst()

@@ -2,6 +2,8 @@ package org.example.gamelld.Character.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.example.gamelld.Character.CharEnum;
+import org.example.gamelld.factions.FactionEnum;
 import org.example.gamelld.factions.FactionStrategies;
 
 @Getter
@@ -13,6 +15,10 @@ public abstract class Character {
     Integer attack;
 
     Integer spAttack;
+
+    CharEnum charType;
+
+    FactionEnum faction;
 
     FactionStrategies factionStrategies;
 

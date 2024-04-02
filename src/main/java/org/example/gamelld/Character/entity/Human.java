@@ -3,7 +3,7 @@ package org.example.gamelld.Character.entity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.experimental.SuperBuilder;
+import org.example.gamelld.Character.CharEnum;
 
 @Setter
 @Getter
@@ -16,15 +16,22 @@ public class Human extends Character {
 
     public Human(){
         super();
+        this.setCharType(CharEnum.HUMAN);
     }
 
-//    String bow;
-//
-//    Integer arrows;
-//
-//    Human(){
-//        bow = "";
-//        arrows = 50;
-//    }
+    @Override
+    public String toString() {
+        return "Human{" +
+                "Clan='" + Clan + '\'' +
+                ", Race='" + Race + '\'' +
+                ", hp=" + hp +
+                ", attack=" + attack +
+                ", spAttack=" + spAttack +
+                ", charType=" + charType +
+                ", faction=" + faction +
+                ", primary='" + primary + '\'' +
+                ", ammo='" + ammo + '\'' +
+                '}';
+    }
 
 }
